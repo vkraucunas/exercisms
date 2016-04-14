@@ -5,7 +5,7 @@ describe('CustomSet', function() {
   it('can delete elements', function(){
     var expected = new CustomSet([1, 3]);
     var actual = new CustomSet([3, 2, 1]).delete(2);
-    expect(actual.eql(expected)).toBe(true);
+    expect(actual.to.eql(expected)).toBe(true);
 
     var expected2 = new CustomSet([1, 2, 3]);
     var actual2 = new CustomSet([3, 2, 1]).delete(4);
