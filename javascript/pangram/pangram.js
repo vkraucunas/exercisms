@@ -1,49 +1,35 @@
 module.exports = Pangram;
 
 function Pangram(string) {
-    this.isPangram = function () {
-        if (string.length < 26) {
-            return false;
-        } else {
-            return checking(string);
-        }
+    this.isPangram = function() {
+        return (string.length < 26) ? false : checking(string);
     }
 }
 
 function checking(str) {
     str = str.toLowerCase();
-    var alphabet = [ 'a',
-          'b',
-          'c',
-          'd',
-          'e',
-          'f',
-          'g',
-          'h',
-          'i',
-          'j',
-          'k',
-          'l',
-          'm',
-          'n',
-          'o',
-          'p',
-          'q',
-          'r',
-          's',
-          't',
-          'u',
-          'v',
-          'w',
-          'x',
-          'y',
-          'z' ];
+    var alphabet = [ 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z' ];
     var result = alphabet.map(function (current, index) {
-        return str.includes(current)? true : false;
+        return str.includes(current) ? true : false;
     });
-
     return result.indexOf(false) === -1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //first solution
 //     var alphabet = {
 //         a: false,

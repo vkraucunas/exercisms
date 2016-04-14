@@ -58,11 +58,11 @@ Bob.prototype.hey = function(input) {
 
   if (isSilence(input)) {
     result = anger;
-  } else if(isAllNumbers(input)){
+  } else if (isAllNumbers(input)){
     result = isQuestion(input) ? sure :meh;
-  } else if(isForceful(input) ) {
+  } else if (isForceful(input) ) {
      result = snark;
-  } else if(isQuestion(input)) {
+  } else if (isQuestion(input)) {
     result = sure;
   } else {
     result = meh;

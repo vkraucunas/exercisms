@@ -11,7 +11,7 @@ function myComputeFn(uno, dos) {
         throw new Error("DNA strands must be of equal length.");
     }
     uno.split('').map((x,i) => {
-        result += x !== dos.charAt(i)? 1: 0;
+        result += x !== dos.charAt(i) ? 1: 0;
     });
 
     return result;
