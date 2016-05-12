@@ -1,5 +1,3 @@
-module.exports = Pangram;
-
 function Pangram(string) {
     this.isPangram = function() {
         return (string.length < 26) ? false : checking(string);
@@ -14,3 +12,4 @@ function checking(str) {
     });
     return result.indexOf(false) === -1;
 }
+module.exports = Pangram;
